@@ -39,13 +39,13 @@ export default function Navbar() {
 
 
   return (
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary mb-2">
+      <div class="container-fluid d-flex flex-row-reverse">
 
-        <a class="navbar-brand" href="#">The Tran$lator</a>
+        <a class="navbar-brand text-decoration-underline fw-bold fs-4" href="#">The Tran$lator</a>
 
         <div id="currentDate">
-          <p>Today is {currentDate}</p>
+          <p class="fw-bold">Today is {currentDate}</p>
         </div>
 
         <form class="d-flex" role="search" onSubmit={handleSubmit}>

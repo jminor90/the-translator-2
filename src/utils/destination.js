@@ -31,6 +31,7 @@ $resultFlag.html('');
   // resultFlag.append(resultFlag)
 
   $imgFlag.attr("src", dataFlag)
+  $imgFlag.attr("id", "flag")
   $resultFlag.append($imgFlag)
 
   $resultDrop.val(dataCurrencies)

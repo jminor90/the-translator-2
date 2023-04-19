@@ -13,8 +13,8 @@ export default function Footer() {
   }
 
   return (
-    <footer class="container-fluid"> 
-      <h6>Footer.js</h6>
+    <footer class="container-fluid d-flex justify-content-center align-items-center flex-column"> 
+      <h6>Built by <a href="https://github.com/jminor90" target="_blank">jminor90</a></h6>
       <button id="removeButton" onClick={removeFunction}>Clear Local Storage</button>
     </footer>
   )

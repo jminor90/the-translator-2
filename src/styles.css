@@ -6,6 +6,7 @@
 html, body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color:blue !important;
 }
 
 footer {
@@ -13,16 +14,19 @@ footer {
   z-index: 2;
   bottom: 0;
   width: 100vw;
-  background-color: yellow;
+  background-color: goldenrod;
+  border-top:solid 2px;
+  border-radius: 4px 4px 0px 0px;
 }
 
 .navbar{
-  position: fixed;
+  position: fixed !important;
   z-index: 2;
   top: 0;
   width: 100vw;
-  background-color: aqua;
-  border: solid 1px;
+  background-color: deepskyblue;
+  border-bottom: solid 2px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* .currency {
@@ -34,16 +38,38 @@ footer {
 } */
 
 .card{
-  background: chocolate !important;
+  background: beige !important;
+  height: 55vh !important;
+  margin-top: .5em;
+  border: solid 2px !important;
+}
+
+#flag{
+  width: 75%;
+  border:solid 1px;
 }
 
 .card-body {
-  background: antiquewhite;
+  /* background: antiquewhite;
   height: 450px;
   width:400px;
   max-height: 500px;
   max-width: 500px;
-  display: flex;
+  display: flex; */
   /* align-items: center;
     justify-content: center; */
+}
+
+#mainContainer {
+  margin-top:4em !important;
+}
+
+@media screen and (max-width: 992px) {
+  #currencyCard {
+    margin-bottom: 4em;
+  }
+
+  #mainContainer {
+    margin-top:6em !important;
+  }
 }

@@ -10,20 +10,20 @@ export default function Currency() {
 
   return (
 
-    <div class="container-fluid col-lg-6 ">
-      <div class="card">
-      <h2>Currency Exchange</h2>
-        <div class="card-body">
+    <div class="container-fluid col-lg-6 d-flex justify-content-center">
+      <div class="card vw-100" id="currencyCard">
+      <h2 class="d-flex align-items-center flex-column">Currency Exchange</h2>
+        <div class="card-body  d-flex justify-content-center m-1">
           <div class="currency">
 
 
-            <div>
+            <div class="d-flex align-items-center flex-column">
               <input type="search" id="userAmount" placeholder="Enter Dollar Amount" />
             </div>
 
-            <form class="currDrop">
+            <form class="currDrop d-flex align-items-center flex-column m-1">
               <div>
-                <select name="dropdown" id="amountDrop">
+                <select class="m-1" name="dropdown" id="amountDrop">
                   <option value="AED">AED</option>
                   <option value="AFN">AFN</option>
                   <option value="ALL">ALL</option>
@@ -193,7 +193,7 @@ export default function Currency() {
                 <button id="exchangeBtn" onClick={calculate}>Exchange</button>
               </div>
               <div>
-                <select name="dropdown" id="resultDrop">
+                <select class="m-1" name="dropdown" id="resultDrop">
                   <option value="AED">AED</option>
                   <option value="AFN">AFN</option>
                   <option value="ALL">ALL</option>
@@ -359,10 +359,10 @@ export default function Currency() {
                 </select>
               </div>
             </form>
-            <p id="resultFlag">
+            <p id="resultFlag" class=" d-flex align-items-center flex-column ">
 
             </p>
-            <div id="exchangeResult">
+            <div class="d-flex align-items-center flex-column fs-5" id="exchangeResult">
 
             </div>
             <p id="resultSymbol">

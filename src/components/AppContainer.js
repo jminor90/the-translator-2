@@ -11,9 +11,9 @@ export default function AppContainer() {
   return (
     <>
       <Navbar />
-      <div class="container-fluid row d-flex align-items-center justify-content-around">
-        <Currency />
+      <div class="container-fluid row d-flex justify-content-around vh-100" id="mainContainer">
         <Language />
+        <Currency />
       </div>
       <Footer />
     </>
