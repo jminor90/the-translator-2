@@ -11,7 +11,7 @@ export default function Language() {
   return (
     <div class="container-fluid col-lg-6 d-flex justify-content-center">
       <div class="card vw-100">
-      <h2 class="d-flex align-items-center flex-column">Language Translator</h2>
+        <h2 class="d-flex align-items-center flex-column">Language Translator</h2>
         <div class="card-body d-flex justify-content-center m-1">
           <div class="language">
 
@@ -25,6 +25,7 @@ export default function Language() {
 
               </form>
             </div>
+
             <div>
               <div class="containerDiv" id="resultDiv">
 
@@ -35,10 +36,29 @@ export default function Language() {
               <p class=" d-flex align-items-center flex-column fs-5" id="translateResult">
 
               </p>
+
+            </div>
+            <div>
+              <h3>Other Languages Spoken</h3>
+              <div id="languageList">
+                {/* <li>Test</li> */}
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* 2nd Column for 2nd Language translation?....
+      <div class="card vw-100">
+        <h2 class="d-flex align-items-center flex-column">Language Translator</h2>
+        <div class="card-body d-flex justify-content-center m-1">
+          <div class="language2">
+
+
+
+          </div>
+        </div>
+      </div> */}
     </div>
   )
 }

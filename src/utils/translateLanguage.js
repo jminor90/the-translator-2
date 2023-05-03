@@ -60,11 +60,19 @@ function nameToCode(data, SteveSearchBar) {
     const foundLang = found.language
 
 
-    console.log(data)
-    console.log(SteveSearchBar)
-    console.log(foundLang)
+    // console.log(data)
+    // console.log(SteveSearchBar)
+    // console.log(foundLang)
+    
+    // if user tries to translate from English will catch
+    if (foundLang === "en") {
+      alert("cannot translate English to English.")
+    } else {
 
-    translateAPI(foundLang)
+      translateAPI(foundLang)
+
+    }
+
   }
 
 }
